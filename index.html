@@ -13,16 +13,27 @@
             
             header { position: fixed; top: 50%; width: 100%; transform: translateY(-50%); }
             main { position: fixed; bottom: 40px; width: 100%; }
+            
+            .animated { animation: animIn 1s ease 0s forwards; opacity: 0; transform: translateY(10px);  }
+            
+            h1.animated { animation-delay: 0.1s; }
+            h2.animated { animation-delay: 0.3s; }
+            p.animated { animation-delay: 0.5s; }
+            
+            @keyframes animIn {
+	            0% { opacity: 0; transform: translateY(10px); }
+	            100% { opacity: 1; transform: translateY(0px); }
+            }
         </style>
     </head>
     
 	<body>
 		<header>
-			<h1>TOUS LES JOURS</h1>
-			<h2>Essentiel</h2>
+			<h1 class="animated">TOUS LES JOURS</h1>
+			<h2 class="animated">Essentiel</h2>
 		</header>
 		<main>
-			<p>Launching AW17</p>
+			<p class="animated">Launching AW17</p>
 		</main>
 	</body>
 </html>
