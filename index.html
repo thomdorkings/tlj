@@ -5,35 +5,35 @@
         <title>TOUS LES JOURS - Essentiel</title>
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
         <style>
+	        @font-face {
+			    font-family: 'suisseintl-regular';
+			    src: url('suisseintl-regular-webfont.woff2') format('woff2'),
+			         url('suisseintl-regular-webfont.woff') format('woff');
+			    font-weight: normal;
+			    font-style: normal;
+			
+			}
+
             * { margin:0; padding:0; }
-            body { font-family: 'Roboto', sans-serif; text-align: center; background: #F9F5F3; -webkit-text-size-adjust: none; }
-            h1 { font-size: 34px; letter-spacing: 3px; margin-bottom: 20px; font-weight: 500; }
-            h2, p { font-size: 11px; letter-spacing: 3px; margin-bottom: 60px; text-transform: uppercase; font-weight: 500; }
-            p { margin: 0; }
+            body { font-family: 'suisseintl-regular'; text-align: left; background: #fff; -webkit-text-size-adjust: none; padding: 4vw; }
             
-            header { position: fixed; top: 50%; width: 100%; transform: translateY(-50%); }
-            main { position: fixed; bottom: 40px; width: 100%; }
+            h1, p { color: #000; font-size: 6vw; font-weight: normal; line-height: 1em; }
             
-            .animated { animation: animIn 1s ease 0s forwards; opacity: 0; transform: translateY(10px);  }
-            
-            h1.animated { animation-delay: 0.1s; }
-            h2.animated { animation-delay: 0.3s; }
-            p.animated { animation-delay: 0.5s; }
-            
-            @keyframes animIn {
-	            0% { opacity: 0; transform: translateY(10px); }
-	            100% { opacity: 1; transform: translateY(0px); }
-            }
+            main>p { position: fixed; bottom: 4vw; width: 100%; }
+            main>div.img { position: fixed; top: 30vh; left: 4.25vw; width: 96vw; height: 70vh; background: url('img/ecosse.jpg') 50% 50% no-repeat #000; background-size: cover; opacity: 0.3; }
+
+            @media screen and (min-width: 769px) { h1, p { font-size: 3vw; } }
+
         </style>
     </head>
     
 	<body>
 		<header>
-			<h1 class="animated">TOUS LES JOURS</h1>
-			<h2 class="animated">Essentiel</h2>
+			<h1 class="animated">TOUS LES JOURS<br>Essentiel</h1>
 		</header>
 		<main>
-			<p class="animated">Launching AW17</p>
+			<div class="img"></div>
+			<p class="animated">Debut Collection<br>AW17</p>
 		</main>
 	</body>
 </html>
