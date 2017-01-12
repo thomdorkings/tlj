@@ -15,12 +15,13 @@
 			}
 
             * { margin:0; padding:0; }
-            body { font-family: 'suisseintl-regular'; text-align: left; background: #fff; -webkit-text-size-adjust: none; padding: 4vw; }
+            body { font-family: 'suisseintl-regular'; text-align: left; background: #fff; -webkit-text-size-adjust: none; }
             
             h1, p { color: #000; font-size: 6vw; font-weight: normal; line-height: 1em; }
             
-            main>p { position: fixed; bottom: 4vw; width: 100%; }
-            main>div.img { position: fixed; top: 30vh; left: 4.25vw; width: 96vw; height: 70vh; background: url('img/ecosse.jpg') 50% 50% no-repeat #000; background-size: cover; opacity: 0.3; }
+            header>h1 { position: absolute; top: 4vw; left: 4vw; }
+            main>p { position: fixed; bottom: 4vw; left: 4vw; }
+            main>div.img { position: fixed; top: 30vh; right: 0; bottom: 0; left: 19.5vw; background: url('img/cashmere.jpg') 50% 50% no-repeat blue; background-size: cover; background-blend-mode: multiply; z-index: -1; }
 
             @media screen and (min-width: 769px) { h1, p { font-size: 3vw; } }
 
